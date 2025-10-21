@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxe Miami Studio</title>
+    <style>
+        /* Base styles */
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #333;
+            line-height: 1.6;
+        }
+        a {
+            color: #0077cc;
+            text-decoration: none;
+        }
+        h1, h2 {
+            margin: 0;
+        }
+        p {
+            margin: 0 0 1rem;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 0;
+        }
+        /* Hero section */
+        #hero {
+            position: relative;
+            background: url('2a954701-bb44-489e-9605-a0c821e9226d.png') center/cover no-repeat;
+            color: #fff;
+            text-align: center;
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.4);
+        }
+        #hero h1 {
+            font-size: 3rem;
+            z-index: 1;
+        }
+        #hero p {
+            font-size: 1.25rem;
+            margin-bottom: 1.5rem;
+            z-index: 1;
+        }
+        .btn {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            background: #ff5a5f;
+            color: #fff;
+            border-radius: 4px;
+            font-weight: bold;
+            z-index: 1;
+        }
+        .btn:hover {
+            background: #e14d50;
+        }
+        /* Section styling */
+        section {
+            padding: 2rem 0;
+        }
+        #description {
+            background: #f9f9f9;
+        }
+        #amenities ul {
+            list-style: none;
+            padding-left: 1rem;
+        }
+        #amenities li::before {
+            content: "\2022";
+            color: #ff5a5f;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+        #gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        #gallery img {
+            flex: 1 1 calc(50% - 1rem);
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        #connect {
+            background: #f9f9f9;
+            text-align: center;
+        }
+        .social-links a {
+            display: inline-block;
+            margin: 0 0.5rem;
+            padding: 0.5rem 1rem;
+            background: #fff;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            color: #333;
+            font-weight: bold;
+        }
+        .social-links a:hover {
+            background: #ff5a5f;
+            color: #fff;
+            border-color: #ff5a5f;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section id="hero">
+        <h1>Luxe Miami Studio</h1>
+        <p>Your home away from home in the heart of Miami</p>
+        <a href="https://www.airbnb.com/rooms/1508169442838010374?guests=1&adults=1&s=67&unique_share_id=a47f53e7-3c15-4a7a-9017-2356ddf0ae9d" class="btn" target="_blank">Book Now</a>
+    </section>
+
+    <!-- Description Section -->
+    <section id="description">
+        <div class="container">
+            <h2>Welcome to Luxe Miami Studio</h2>
+            <p>Welcome to your home away from home right in the heart of Downtown Miami! This modern, luxe studio is the ideal place to relax while being steps from shops, restaurants and a vibrant nightlife. Located perfectly central, it puts the best of Miami within reach—hop on the free Metromover to reach Brickell in minutes or head to South Beach, about 15 minutes away. Perfect for digital nomads with a fully furnished workspace included, this studio is also great for leisure travelers or anyone looking to experience Miami in style.</p>
+            <p><strong>The Space:</strong> Experience luxe living in the heart of Miami at Alea Miami. Our modern studio is designed for both style and comfort. A clever wall divider and rotating TV create separate sleeping and living areas, giving the space the feel of a one‑bedroom apartment. Enjoy a fully equipped kitchen, in‑unit laundry, pantry, and full AC.</p>
+            <p><strong>Guest Access:</strong> Guests are welcome to enjoy all amenities located on Level P. Start your day with coffee, sweet treats and light breakfast at the charming café in the lobby.</p>
+        </div>
+    </section>
+
+    <!-- Amenities Section -->
+    <section id="amenities">
+        <div class="container">
+            <h2>Features &amp; Amenities</h2>
+            <ul>
+                <li>Stylish design with separate sleeping and living areas</li>
+                <li>Fully equipped kitchen and pantry</li>
+                <li>In‑unit laundry facilities</li>
+                <li>Full air conditioning</li>
+                <li>Workspace for digital nomads</li>
+                <li>Lobby café for coffee and breakfast</li>
+                <li>Central location near shops, restaurants and nightlife</li>
+                <li>Easy access to Brickell and South Beach via free Metromover</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+        <div class="container">
+            <h2>Gallery</h2>
+            <img src="2a954701-bb44-489e-9605-a0c821e9226d.png" alt="Modern Studio Interior">
+            <img src="b5f5f075-63fb-440a-b80c-1a4a26c6c610.png" alt="Sleek Workspace">
+        </div>
+    </section>
+
+    <!-- Connect Section -->
+    <section id="connect">
+        <div class="container">
+            <h2>Stay Connected</h2>
+            <p>Follow us on social media for the latest updates and special offers.</p>
+            <div class="social-links">
+                <a href="#" title="Instagram">Instagram</a>
+                <a href="#" title="TikTok">TikTok</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Book CTA Section -->
+    <section id="cta">
+        <div class="container" style="text-align:center; padding: 2rem 0;">
+            <h2>Ready to Experience Miami in Style?</h2>
+            <a href="https://www.airbnb.com/rooms/1508169442838010374?guests=1&adults=1&s=67&unique_share_id=a47f53e7-3c15-4a7a-9017-2356ddf0ae9d" class="btn" target="_blank">Book Your Stay</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Luxe Miami Studio. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
